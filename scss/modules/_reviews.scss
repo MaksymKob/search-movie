@@ -1,0 +1,70 @@
+.window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+    border: 5px solid #000;
+    border-radius: 10px;
+    z-index: 100;
+    overflow: auto;
+    background: #fff;
+}
+
+.reviews {
+    padding: 55px 20px 0 20px;
+    width: 100%;
+    position: relative;
+
+    &__title {
+        font-size: 20px;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+
+    &__content {
+        font-size: 16px;
+    }
+}
+
+.titleMovie {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.reviews__close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.reviews__close:hover {
+    background: rgb(30, 135, 161);
+    z-index: 110;
+    transition: .3s;
+}
+
+.window-overlay {
+    display: none;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .8;
+}

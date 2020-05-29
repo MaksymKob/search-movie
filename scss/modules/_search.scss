@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    
+    &__field {
+    padding: 10px;
+    background: none;
+    border-bottom: 3px solid #000;
+    }
+    &__btn {
+        background: none;
+        font-size: 20px;
+        
+    }
+}
+
